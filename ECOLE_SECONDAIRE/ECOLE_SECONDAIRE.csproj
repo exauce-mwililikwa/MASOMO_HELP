@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71FF3E9D-2F2B-4EEF-8501-73B3706C9D6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECOLE_SECONDAIRE</RootNamespace>
+    <AssemblyName>ECOLE_SECONDAIRE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\ECOLE_SECONDAIREx\ECOLE_SECONDAIRE\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\ECOLE_SECONDAIREx\ECOLE_SECONDAIRE\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASSES\CLASS_GLOBAL.cs" />
+    <Compile Include="CLASS_DATA_BASE\AJOUT.cs" />
+    <Compile Include="CLASS_DATA_BASE\CLS_GLOSSIERE.cs" />
+    <Compile Include="CLASS_DATA_BASE\MYCONNECTION.cs" />
+    <Compile Include="CLASS_DESIGN\DESIGN.cs" />
+    <Compile Include="DASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DASHBOARD.designer.cs">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\AJOUT_COURS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\AJOUT_COURS.Designer.cs">
+      <DependentUpon>AJOUT_COURS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\AJOUT_DEPARTEMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\AJOUT_DEPARTEMENT.Designer.cs">
+      <DependentUpon>AJOUT_DEPARTEMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\AJOUT_NIVEAU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\AJOUT_NIVEAU.Designer.cs">
+      <DependentUpon>AJOUT_NIVEAU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\ANNE_SCOLAIRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\ANNE_SCOLAIRE.Designer.cs">
+      <DependentUpon>ANNE_SCOLAIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\ATTRIBUTION_COURS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\ATTRIBUTION_COURS.Designer.cs">
+      <DependentUpon>ATTRIBUTION_COURS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\INFORMATION_ELEVE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\INFORMATION_ELEVE.Designer.cs">
+      <DependentUpon>INFORMATION_ELEVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\NOVEAU_TRAVAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\NOVEAU_TRAVAIL.Designer.cs">
+      <DependentUpon>NOVEAU_TRAVAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\PARAMETRE_JOUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\PARAMETRE_JOUR.Designer.cs">
+      <DependentUpon>PARAMETRE_JOUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\PERIODE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\PERIODE.Designer.cs">
+      <DependentUpon>PERIODE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\PLANIFICATION_HORAIRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\PLANIFICATION_HORAIRE.Designer.cs">
+      <DependentUpon>PLANIFICATION_HORAIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\SECTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\SECTION.Designer.cs">
+      <DependentUpon>SECTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\ADMINISTRATION_BULLETIN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\ADMINISTRATION_BULLETIN.Designer.cs">
+      <DependentUpon>ADMINISTRATION_BULLETIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\ADMINISTRATION_COURS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\ADMINISTRATION_COURS.Designer.cs">
+      <DependentUpon>ADMINISTRATION_COURS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\AFFECTATION_RESULTAT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\AFFECTATION_RESULTAT.Designer.cs">
+      <DependentUpon>AFFECTATION_RESULTAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\AJOUT_AGENT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\AJOUT_AGENT.Designer.cs">
+      <DependentUpon>AJOUT_AGENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\COTATION_TRAVAIL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\COTATION_TRAVAIL.Designer.cs">
+      <DependentUpon>COTATION_TRAVAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\HORAIRE_HEBDOMADAIRE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\HORAIRE_HEBDOMADAIRE.Designer.cs">
+      <DependentUpon>HORAIRE_HEBDOMADAIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\INSCRIPTION_ELEVE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\INSCRIPTION_ELEVE.Designer.cs">
+      <DependentUpon>INSCRIPTION_ELEVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\LISTE_ELEVE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\LISTE_ELEVE.Designer.cs">
+      <DependentUpon>LISTE_ELEVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\MESURE_DISCIPLINAIRE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\MESURE_DISCIPLINAIRE.Designer.cs">
+      <DependentUpon>MESURE_DISCIPLINAIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\NOUVEAU_PROF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\NOUVEAU_PROF.Designer.cs">
+      <DependentUpon>NOUVEAU_PROF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\PAIEMENT_ELEVE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\PAIEMENT_ELEVE.Designer.cs">
+      <DependentUpon>PAIEMENT_ELEVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\SALLE_DE_CLASSE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\SALLE_DE_CLASSE.Designer.cs">
+      <DependentUpon>SALLE_DE_CLASSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\AJOUT_COURS.resx">
+      <DependentUpon>AJOUT_COURS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\AJOUT_DEPARTEMENT.resx">
+      <DependentUpon>AJOUT_DEPARTEMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\AJOUT_NIVEAU.resx">
+      <DependentUpon>AJOUT_NIVEAU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\ANNE_SCOLAIRE.resx">
+      <DependentUpon>ANNE_SCOLAIRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\ATTRIBUTION_COURS.resx">
+      <DependentUpon>ATTRIBUTION_COURS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\INFORMATION_ELEVE.resx">
+      <DependentUpon>INFORMATION_ELEVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\NOVEAU_TRAVAIL.resx">
+      <DependentUpon>NOVEAU_TRAVAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\PARAMETRE_JOUR.resx">
+      <DependentUpon>PARAMETRE_JOUR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\PERIODE.resx">
+      <DependentUpon>PERIODE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\PLANIFICATION_HORAIRE.resx">
+      <DependentUpon>PLANIFICATION_HORAIRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\SECTION.resx">
+      <DependentUpon>SECTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\ADMINISTRATION_BULLETIN.resx">
+      <DependentUpon>ADMINISTRATION_BULLETIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\ADMINISTRATION_COURS.resx">
+      <DependentUpon>ADMINISTRATION_COURS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\AFFECTATION_RESULTAT.resx">
+      <DependentUpon>AFFECTATION_RESULTAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\AJOUT_AGENT.resx">
+      <DependentUpon>AJOUT_AGENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\COTATION_TRAVAIL.resx">
+      <DependentUpon>COTATION_TRAVAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\HORAIRE_HEBDOMADAIRE.resx">
+      <DependentUpon>HORAIRE_HEBDOMADAIRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\INSCRIPTION_ELEVE.resx">
+      <DependentUpon>INSCRIPTION_ELEVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\LISTE_ELEVE.resx">
+      <DependentUpon>LISTE_ELEVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\MESURE_DISCIPLINAIRE.resx">
+      <DependentUpon>MESURE_DISCIPLINAIRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\NOUVEAU_PROF.resx">
+      <DependentUpon>NOUVEAU_PROF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\PAIEMENT_ELEVE.resx">
+      <DependentUpon>PAIEMENT_ELEVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\SALLE_DE_CLASSE.resx">
+      <DependentUpon>SALLE_DE_CLASSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About Us Male_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Shopping Cart_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Group Woman Man_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Tag_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_User_Group_Man_Man_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Available Updates_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank Cards_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank_Cards_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank_Cards_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode Scanner 2_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode Scanner 2_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode_Scanner_2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode_Scanner_2_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create_New_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down_2_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down_3_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down_Right_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\droitre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FB_IMG_15839555867595361.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gallery_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gauche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand_Down_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Handcuffs_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idea_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instagram_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maestro_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maestro_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximum_Value_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Bag_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Bag_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move by Trolley_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Move_by_Trolley_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus Math_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Price_Tag_USD_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Receipt_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Receipt_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Receipt_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right_3_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right_Down_2_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save as_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sell Property_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Share_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping Cart Loaded_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping Cart_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping_Cart_Loaded_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping_Cart_Loaded_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Singing_Teacher_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Female_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student_Female_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student_Male_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\University_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update Tag_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Group Man Man_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_Male_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verified_Account_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avtar-8.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
