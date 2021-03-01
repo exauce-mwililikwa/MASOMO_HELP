@@ -49,45 +49,44 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.NIVEAU = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ABREVIATION = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.DESIGNATION = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.NIVEAU = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.DESIGNATION = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ABREVIATION = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.PRENOM = new System.Windows.Forms.Label();
+            this.POSTNOM = new System.Windows.Forms.Label();
+            this.NOM = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.pan = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PHOTO)).BeginInit();
             this.bunifuCards1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pan.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -287,6 +286,65 @@
             this.bunifuCards1.Size = new System.Drawing.Size(712, 474);
             this.bunifuCards1.TabIndex = 1;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(519, 146);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(172, 20);
+            this.textBox2.TabIndex = 7;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(25, 172);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(670, 281);
+            this.dataGridView2.TabIndex = 6;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.NIVEAU);
+            this.groupBox3.Controls.Add(this.DESIGNATION);
+            this.groupBox3.Controls.Add(this.ABREVIATION);
+            this.groupBox3.Location = new System.Drawing.Point(21, 21);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(670, 100);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "SALLE";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(480, 22);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(49, 13);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "LETTRE";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(259, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 13);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "OPTION";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(28, 22);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(47, 13);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "NIVEAU";
+            // 
             // NIVEAU
             // 
             this.NIVEAU.AutoRoundedCorners = true;
@@ -308,29 +366,6 @@
             this.NIVEAU.Size = new System.Drawing.Size(140, 36);
             this.NIVEAU.TabIndex = 2;
             this.NIVEAU.SelectedIndexChanged += new System.EventHandler(this.NIVEAU_SelectedIndexChanged);
-            // 
-            // ABREVIATION
-            // 
-            this.ABREVIATION.AutoRoundedCorners = true;
-            this.ABREVIATION.BackColor = System.Drawing.Color.Transparent;
-            this.ABREVIATION.BorderRadius = 17;
-            this.ABREVIATION.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ABREVIATION.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ABREVIATION.Enabled = false;
-            this.ABREVIATION.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ABREVIATION.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ABREVIATION.FocusedState.Parent = this.ABREVIATION;
-            this.ABREVIATION.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ABREVIATION.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ABREVIATION.HoverState.Parent = this.ABREVIATION;
-            this.ABREVIATION.ItemHeight = 30;
-            this.ABREVIATION.ItemsAppearance.Parent = this.ABREVIATION;
-            this.ABREVIATION.Location = new System.Drawing.Point(259, 44);
-            this.ABREVIATION.Name = "ABREVIATION";
-            this.ABREVIATION.ShadowDecoration.Parent = this.ABREVIATION;
-            this.ABREVIATION.Size = new System.Drawing.Size(140, 36);
-            this.ABREVIATION.TabIndex = 3;
-            this.ABREVIATION.SelectedIndexChanged += new System.EventHandler(this.ABREVIATION_SelectedIndexChanged);
             // 
             // DESIGNATION
             // 
@@ -355,140 +390,78 @@
             this.DESIGNATION.TabIndex = 4;
             this.DESIGNATION.SelectedIndexChanged += new System.EventHandler(this.DESIGNATION_SelectedIndexChanged);
             // 
-            // groupBox3
+            // ABREVIATION
             // 
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.NIVEAU);
-            this.groupBox3.Controls.Add(this.DESIGNATION);
-            this.groupBox3.Controls.Add(this.ABREVIATION);
-            this.groupBox3.Location = new System.Drawing.Point(21, 21);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(670, 100);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "SALLE";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(28, 22);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(47, 13);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "NIVEAU";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(259, 22);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 13);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "OPTION";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(480, 22);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 13);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "LETTRE";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(21, 172);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(670, 281);
-            this.dataGridView2.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(519, 146);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 20);
-            this.textBox2.TabIndex = 7;
+            this.ABREVIATION.AutoRoundedCorners = true;
+            this.ABREVIATION.BackColor = System.Drawing.Color.Transparent;
+            this.ABREVIATION.BorderRadius = 17;
+            this.ABREVIATION.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ABREVIATION.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ABREVIATION.Enabled = false;
+            this.ABREVIATION.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ABREVIATION.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ABREVIATION.FocusedState.Parent = this.ABREVIATION;
+            this.ABREVIATION.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ABREVIATION.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ABREVIATION.HoverState.Parent = this.ABREVIATION;
+            this.ABREVIATION.ItemHeight = 30;
+            this.ABREVIATION.ItemsAppearance.Parent = this.ABREVIATION;
+            this.ABREVIATION.Location = new System.Drawing.Point(259, 44);
+            this.ABREVIATION.Name = "ABREVIATION";
+            this.ABREVIATION.ShadowDecoration.Parent = this.ABREVIATION;
+            this.ABREVIATION.Size = new System.Drawing.Size(140, 36);
+            this.ABREVIATION.TabIndex = 3;
+            this.ABREVIATION.SelectedIndexChanged += new System.EventHandler(this.ABREVIATION_SelectedIndexChanged);
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.linkLabel1);
             this.groupBox4.Controls.Add(this.textBox3);
             this.groupBox4.Controls.Add(this.dataGridView3);
-            this.groupBox4.Location = new System.Drawing.Point(15, 389);
+            this.groupBox4.Location = new System.Drawing.Point(3, 376);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(572, 414);
+            this.groupBox4.Size = new System.Drawing.Size(586, 414);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "LISTE DE SANCTIONS";
             // 
-            // dataGridView3
+            // linkLabel1
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(6, 70);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(551, 334);
-            this.dataGridView3.TabIndex = 0;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(7, 33);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(51, 13);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Nouveau";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(405, 43);
+            this.textBox3.Location = new System.Drawing.Point(415, 44);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(152, 20);
             this.textBox3.TabIndex = 1;
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(7, 70);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(560, 334);
+            this.dataGridView3.TabIndex = 0;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(454, 294);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(400, 7);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(86, 21);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "TITULAIRE";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(400, 59);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(301, 21);
-            this.label19.TabIndex = 5;
-            this.label19.Text = "MUTINDIAPALA MWILILIKWA EXAUCE";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(400, 175);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(28, 21);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "34";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(400, 136);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(159, 21);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "NOMBRE DE PLACE";
             // 
             // label22
             // 
@@ -526,38 +499,39 @@
             this.pictureBox2.Location = new System.Drawing.Point(1247, 523);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(130, 129);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
-            // label25
+            // PRENOM
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(1118, 575);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(74, 21);
-            this.label25.TabIndex = 14;
-            this.label25.Text = "EXAUCE";
+            this.PRENOM.AutoSize = true;
+            this.PRENOM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PRENOM.Location = new System.Drawing.Point(1118, 575);
+            this.PRENOM.Name = "PRENOM";
+            this.PRENOM.Size = new System.Drawing.Size(74, 21);
+            this.PRENOM.TabIndex = 14;
+            this.PRENOM.Text = "EXAUCE";
             // 
-            // label26
+            // POSTNOM
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(908, 575);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(106, 21);
-            this.label26.TabIndex = 13;
-            this.label26.Text = "MWILILIKWA";
+            this.POSTNOM.AutoSize = true;
+            this.POSTNOM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.POSTNOM.Location = new System.Drawing.Point(908, 575);
+            this.POSTNOM.Name = "POSTNOM";
+            this.POSTNOM.Size = new System.Drawing.Size(106, 21);
+            this.POSTNOM.TabIndex = 13;
+            this.POSTNOM.Text = "MWILILIKWA";
             // 
-            // label27
+            // NOM
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(683, 575);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(133, 21);
-            this.label27.TabIndex = 12;
-            this.label27.Text = "MUTINDIAPALA";
+            this.NOM.AutoSize = true;
+            this.NOM.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NOM.Location = new System.Drawing.Point(683, 575);
+            this.NOM.Name = "NOM";
+            this.NOM.Size = new System.Drawing.Size(133, 21);
+            this.NOM.TabIndex = 12;
+            this.NOM.Text = "MUTINDIAPALA";
             // 
             // guna2Button1
             // 
@@ -565,15 +539,18 @@
             this.guna2Button1.BorderRadius = 21;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Enabled = false;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(695, 748);
+            this.guna2Button1.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Save_48px;
+            this.guna2Button1.Location = new System.Drawing.Point(686, 621);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(165, 45);
             this.guna2Button1.TabIndex = 15;
             this.guna2Button1.Text = "SAUVEGARDER";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label28
             // 
@@ -604,35 +581,41 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(695, 697);
+            this.guna2Button2.Location = new System.Drawing.Point(687, 683);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(164, 45);
             this.guna2Button2.TabIndex = 18;
-            this.guna2Button2.Text = "SAUVEGARDER";
+            this.guna2Button2.Text = "DETAILS";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // pan
+            // 
+            this.pan.Controls.Add(this.pictureBox1);
+            this.pan.Controls.Add(this.groupBox4);
+            this.pan.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pan.Location = new System.Drawing.Point(0, 0);
+            this.pan.Name = "pan";
+            this.pan.Size = new System.Drawing.Size(668, 806);
+            this.pan.TabIndex = 19;
             // 
             // MESURE_DISCIPLINAIRE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pan);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.PRENOM);
+            this.Controls.Add(this.POSTNOM);
+            this.Controls.Add(this.NOM);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.bunifuCards1);
             this.MaximumSize = new System.Drawing.Size(1401, 806);
             this.Name = "MESURE_DISCIPLINAIRE";
@@ -646,14 +629,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.PHOTO)).EndInit();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pan.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -694,21 +678,19 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label PRENOM;
+        private System.Windows.Forms.Label POSTNOM;
+        private System.Windows.Forms.Label NOM;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Panel pan;
 
     }
 }

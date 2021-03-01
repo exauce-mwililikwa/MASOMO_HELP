@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ECOLE_SECONDAIRE.DESIGN_BOXES;
 
 namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
 {
@@ -13,12 +14,15 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
     {
         CLASS_DATA_BASE.CLS_GLOSSIERE A = new CLASS_DATA_BASE.CLS_GLOSSIERE();
         CLASS_DATA_BASE.AJOUT B = new CLASS_DATA_BASE.AJOUT();
-        private Boolean rio;
+        CLASS_DESIGN.DESIGN a = new CLASS_DESIGN.DESIGN();
         string CHARGEMENT_NIVEAU = "SELECT NIVEAU_ETUDE FROM SALLE_DE_CLASS GROUP BY NIVEAU_ETUDE";
         public MESURE_DISCIPLINAIRE()
         {
             InitializeComponent();
             A.CHARGE_COMBO(NIVEAU, "" + CHARGEMENT_NIVEAU);
+            dataGridView3.DataSource = A.TABLEAU("select * from LISTE_DE_SANCTION");
+       
+      
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -168,7 +172,8 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
 
         private void NIVEAU_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ABREVIATION.Enabled = true;
+          
+             ABREVIATION.Enabled = true;
             ABREVIATION.Items.Clear();
             string SESSION = "SELECT ABREVIATION FROM SALLE_DE_CLASS WHERE NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " GROUP BY ABREVIATION";
             A.CHARGE_COMBO(ABREVIATION, "" + SESSION);
@@ -190,6 +195,36 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
         {
             dataGridView2.DataSource = A.TABLEAU("SELECT MATRICULE,NOM,POSTNOM,PRENOM,CLASSE FROM LISTE_INSCRIT_JOURNALIER WHERE NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " AND ABREVIATION='" + ABREVIATION.SelectedItem.ToString() + "' AND LETTRE='" + DESIGNATION.SelectedItem.ToString() + "'");
        
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new FAUTE().Show();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            A.GET_PHOTO("ELEVE", "MATRICULE", "" + dataGridView2.CurrentRow.Cells[0].Value.ToString() + "", pictureBox2);
+            guna2Button1.Enabled = true;
+            NOM.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+            POSTNOM.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
+            PRENOM.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            A.EXEC_UNIVERSEL("SANCTIONNER", "'" + dataGridView2.CurrentRow.Cells[0].Value.ToString() + "','" + dataGridView3.CurrentRow.Cells[1].Value.ToString() + "'", "SANCTION");
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            a.APPEL_PANEL(new DESIGN_USER_CONTROL.DETAILS_SANCTION(), DASHBOARD.c);
+            
         }
     }
 }

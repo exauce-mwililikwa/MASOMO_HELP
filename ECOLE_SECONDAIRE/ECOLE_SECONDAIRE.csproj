@@ -35,12 +35,19 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\ECOLE_SECONDAIREx\ECOLE_SECONDAIRE\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI2">
       <HintPath>..\..\ECOLE_SECONDAIREx\ECOLE_SECONDAIRE\bin\Debug\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -93,6 +100,12 @@
     </Compile>
     <Compile Include="DESIGN_BOXES\ATTRIBUTION_COURS.Designer.cs">
       <DependentUpon>ATTRIBUTION_COURS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\FAUTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DESIGN_BOXES\FAUTE.Designer.cs">
+      <DependentUpon>FAUTE.cs</DependentUpon>
     </Compile>
     <Compile Include="DESIGN_BOXES\INFORMATION_ELEVE.cs">
       <SubType>Form</SubType>
@@ -159,6 +172,12 @@
     </Compile>
     <Compile Include="DESIGN_USER_CONTROL\COTATION_TRAVAIL.Designer.cs">
       <DependentUpon>COTATION_TRAVAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\DETAILS_SANCTION.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESIGN_USER_CONTROL\DETAILS_SANCTION.Designer.cs">
+      <DependentUpon>DETAILS_SANCTION.cs</DependentUpon>
     </Compile>
     <Compile Include="DESIGN_USER_CONTROL\HORAIRE_HEBDOMADAIRE.cs">
       <SubType>UserControl</SubType>
@@ -234,6 +253,9 @@
     <EmbeddedResource Include="DESIGN_BOXES\ATTRIBUTION_COURS.resx">
       <DependentUpon>ATTRIBUTION_COURS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_BOXES\FAUTE.resx">
+      <DependentUpon>FAUTE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DESIGN_BOXES\INFORMATION_ELEVE.resx">
       <DependentUpon>INFORMATION_ELEVE.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,6 +289,9 @@
     <EmbeddedResource Include="DESIGN_USER_CONTROL\COTATION_TRAVAIL.resx">
       <DependentUpon>COTATION_TRAVAIL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DESIGN_USER_CONTROL\DETAILS_SANCTION.resx">
+      <DependentUpon>DETAILS_SANCTION.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DESIGN_USER_CONTROL\HORAIRE_HEBDOMADAIRE.resx">
       <DependentUpon>HORAIRE_HEBDOMADAIRE.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +319,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
