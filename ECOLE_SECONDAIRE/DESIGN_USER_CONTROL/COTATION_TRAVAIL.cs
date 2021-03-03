@@ -37,6 +37,7 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
 
         private void NIVEAU_SelectedIndexChanged(object sender, EventArgs e)
         {
+            guna2Button5.Enabled = false;
             ABREVIATION.Enabled = true;
             ABREVIATION.Items.Clear();
             string SESSION = "SELECT ABREVIATION FROM SALLE_DE_CLASS WHERE NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " GROUP BY ABREVIATION";
@@ -45,7 +46,7 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
 
         private void ABREVIATION_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            guna2Button5.Enabled = false;
 
             DESIGNATION.Enabled = true;
             DESIGNATION.Items.Clear();
@@ -55,6 +56,7 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
 
         private void DESIGNATION_SelectedIndexChanged(object sender, EventArgs e)
         {
+            guna2Button5.Enabled = false;
             COMBO_COURS.Items.Clear();
             A.LABEL(NOMBRE_COURS, "SELECT COUNT(COURS_SALLE.DESIGNATION) FROM COURS_SALLE WHERE NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " AND ABREVIATION='" + ABREVIATION.SelectedItem.ToString() + "' AND LETTRE='" + DESIGNATION.SelectedItem.ToString() + "'", 0);
             A.CHARGE_COMBO(COMBO_COURS, "SELECT COURS_SALLE.DESIGNATION FROM COURS_SALLE WHERE NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " AND ABREVIATION='" + ABREVIATION.SelectedItem.ToString() + "' AND LETTRE='" + DESIGNATION.SelectedItem.ToString() + "'");
