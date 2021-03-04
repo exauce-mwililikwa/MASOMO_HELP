@@ -253,6 +253,12 @@
     <Compile Include="REPORT\BULLETIN.Designer.cs">
       <DependentUpon>BULLETIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="REPORT\BULETIN1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORT\BULETIN1.Designer.cs">
+      <DependentUpon>BULETIN1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DASHBOARD.resx">
       <DependentUpon>DASHBOARD.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,6 +356,9 @@
     </Compile>
     <EmbeddedResource Include="REPORT\BULLETIN.resx">
       <DependentUpon>BULLETIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT\BULETIN1.resx">
+      <DependentUpon>BULETIN1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

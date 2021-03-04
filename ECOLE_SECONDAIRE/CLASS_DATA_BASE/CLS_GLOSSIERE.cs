@@ -190,6 +190,30 @@ namespace ECOLE_SECONDAIRE.CLASS_DATA_BASE
             }
             return ds.Tables[0];
         }
+        public  DataSet get_Report_Z(string nomTable, string refh, string colonnes)
+        {
+            DataSet dst;
+            try
+            {
+                //    innitialiseConnect();
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+                cmd = new SqlCommand("SELECT  " + colonnes + " FROM " + nomTable + "" + refh, con);
+                //  cmd.Parameters.AddWithValue("@valchamp", valchamp);
+                dt = new SqlDataAdapter(cmd);
+                dst = new DataSet();
+                dt.Fill(dst, nomTable);
+                //  MessageBox.Show("SELECT * FROM " + nomTable + ""+refh);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dt.Dispose(); con.Close();
+            }
+            return dst;
+        }
 
        
     }

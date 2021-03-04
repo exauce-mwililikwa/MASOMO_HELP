@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ADMINISTRATION_BULLETIN));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.DESIGNATION = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ABREVIATION = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.NIVEAU = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -90,11 +90,11 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.bunifuCards1.Controls.Add(this.guna2ComboBox3);
+            this.bunifuCards1.Controls.Add(this.DESIGNATION);
             this.bunifuCards1.Controls.Add(this.label3);
-            this.bunifuCards1.Controls.Add(this.guna2ComboBox2);
+            this.bunifuCards1.Controls.Add(this.ABREVIATION);
             this.bunifuCards1.Controls.Add(this.label2);
-            this.bunifuCards1.Controls.Add(this.guna2ComboBox1);
+            this.bunifuCards1.Controls.Add(this.NIVEAU);
             this.bunifuCards1.Controls.Add(this.label1);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(0, 3);
@@ -105,26 +105,26 @@
             this.bunifuCards1.TabIndex = 0;
             this.bunifuCards1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards1_Paint);
             // 
-            // guna2ComboBox3
+            // DESIGNATION
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.BorderRadius = 12;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(260, 125);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox3.TabIndex = 6;
-            this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
+            this.DESIGNATION.BackColor = System.Drawing.Color.Transparent;
+            this.DESIGNATION.BorderRadius = 12;
+            this.DESIGNATION.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DESIGNATION.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DESIGNATION.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DESIGNATION.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DESIGNATION.FocusedState.Parent = this.DESIGNATION;
+            this.DESIGNATION.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.DESIGNATION.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.DESIGNATION.HoverState.Parent = this.DESIGNATION;
+            this.DESIGNATION.ItemHeight = 30;
+            this.DESIGNATION.ItemsAppearance.Parent = this.DESIGNATION;
+            this.DESIGNATION.Location = new System.Drawing.Point(260, 125);
+            this.DESIGNATION.Name = "DESIGNATION";
+            this.DESIGNATION.ShadowDecoration.Parent = this.DESIGNATION;
+            this.DESIGNATION.Size = new System.Drawing.Size(140, 36);
+            this.DESIGNATION.TabIndex = 6;
+            this.DESIGNATION.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -136,25 +136,26 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "DESIGNATION";
             // 
-            // guna2ComboBox2
+            // ABREVIATION
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 12;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(260, 71);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox2.TabIndex = 4;
+            this.ABREVIATION.BackColor = System.Drawing.Color.Transparent;
+            this.ABREVIATION.BorderRadius = 12;
+            this.ABREVIATION.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ABREVIATION.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ABREVIATION.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ABREVIATION.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ABREVIATION.FocusedState.Parent = this.ABREVIATION;
+            this.ABREVIATION.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ABREVIATION.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ABREVIATION.HoverState.Parent = this.ABREVIATION;
+            this.ABREVIATION.ItemHeight = 30;
+            this.ABREVIATION.ItemsAppearance.Parent = this.ABREVIATION;
+            this.ABREVIATION.Location = new System.Drawing.Point(260, 71);
+            this.ABREVIATION.Name = "ABREVIATION";
+            this.ABREVIATION.ShadowDecoration.Parent = this.ABREVIATION;
+            this.ABREVIATION.Size = new System.Drawing.Size(140, 36);
+            this.ABREVIATION.TabIndex = 4;
+            this.ABREVIATION.SelectedIndexChanged += new System.EventHandler(this.ABREVIATION_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -166,25 +167,26 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "SECTION";
             // 
-            // guna2ComboBox1
+            // NIVEAU
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 12;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(260, 22);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox1.TabIndex = 2;
+            this.NIVEAU.BackColor = System.Drawing.Color.Transparent;
+            this.NIVEAU.BorderRadius = 12;
+            this.NIVEAU.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.NIVEAU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.NIVEAU.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NIVEAU.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NIVEAU.FocusedState.Parent = this.NIVEAU;
+            this.NIVEAU.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.NIVEAU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.NIVEAU.HoverState.Parent = this.NIVEAU;
+            this.NIVEAU.ItemHeight = 30;
+            this.NIVEAU.ItemsAppearance.Parent = this.NIVEAU;
+            this.NIVEAU.Location = new System.Drawing.Point(260, 22);
+            this.NIVEAU.Name = "NIVEAU";
+            this.NIVEAU.ShadowDecoration.Parent = this.NIVEAU;
+            this.NIVEAU.Size = new System.Drawing.Size(140, 36);
+            this.NIVEAU.TabIndex = 2;
+            this.NIVEAU.SelectedIndexChanged += new System.EventHandler(this.NIVEAU_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -270,6 +272,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 70);
             this.dataGridView1.Name = "dataGridView1";
@@ -677,11 +680,11 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2ComboBox DESIGNATION;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox ABREVIATION;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox NIVEAU;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
