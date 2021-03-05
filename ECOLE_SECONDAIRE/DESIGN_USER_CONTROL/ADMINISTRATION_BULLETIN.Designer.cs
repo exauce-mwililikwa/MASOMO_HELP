@@ -103,7 +103,6 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(508, 248);
             this.bunifuCards1.TabIndex = 0;
-            this.bunifuCards1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards1_Paint);
             // 
             // DESIGNATION
             // 
@@ -124,7 +123,7 @@
             this.DESIGNATION.ShadowDecoration.Parent = this.DESIGNATION;
             this.DESIGNATION.Size = new System.Drawing.Size(140, 36);
             this.DESIGNATION.TabIndex = 6;
-            this.DESIGNATION.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
+            this.DESIGNATION.SelectedIndexChanged += new System.EventHandler(this.DESIGNATION_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -442,7 +441,6 @@
             this.label17.Size = new System.Drawing.Size(16, 18);
             this.label17.TabIndex = 1;
             this.label17.Text = "0";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label16
             // 
@@ -521,7 +519,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 10;
             this.guna2Button1.Text = "VOIRE LE RESULTAT";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button3
             // 
@@ -542,7 +539,6 @@
             this.guna2Button3.Size = new System.Drawing.Size(180, 45);
             this.guna2Button3.TabIndex = 20;
             this.guna2Button3.Text = "AFFECTATION";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // pictureBox2
             // 
@@ -662,7 +658,6 @@
             this.Controls.Add(this.bunifuCards1);
             this.Name = "ADMINISTRATION_BULLETIN";
             this.Size = new System.Drawing.Size(1398, 819);
-            this.Load += new System.EventHandler(this.ADMINISTRATION_BULLETIN_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
