@@ -18,7 +18,7 @@ namespace ECOLE_SECONDAIRE.CLASS_DATA_BASE
         public static SqlDataAdapter dt = null;//de lire de donnes donnes en entierete dans la bd
         public static SqlDataReader dr = null;//permet de lire de donne ligne par ligne
         public static DataSet ds = null;
-        /////////////////////////////////////CHARGEMENT LABEL UNIQUE 
+        //////////////////////////////////////CHARGEMENT LABEL UNIQUE 
 
         public  void LABEL(Label prix, string rqt,int column)
         {
