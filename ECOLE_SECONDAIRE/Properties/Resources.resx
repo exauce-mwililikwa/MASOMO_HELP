@@ -184,6 +184,12 @@
   <data name="Money_Bag_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Money_Bag_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="avtar-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avtar-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Move by Trolley_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Move by Trolley_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,6 +202,9 @@
   <data name="Image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Share_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Share_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Barcode_Scanner_2_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Barcode_Scanner_2_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -204,9 +213,6 @@
   </data>
   <data name="Handcuffs_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Handcuffs_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Student_Female_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Student_Female_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Down_2_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Down_2_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,20 +223,29 @@
   <data name="Maximum_Value_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maximum_Value_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="avtar-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Plus Math_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Plus Math_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shopping Cart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shopping Cart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Idea_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Idea_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="About_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\About_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Available Updates_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Available Updates_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Down_3_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Down_3_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avtar-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="About_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\About_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Student_Female_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Student_Female_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Shopping Cart Loaded_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shopping Cart Loaded_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,8 +262,8 @@
   <data name="Move_by_Trolley_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Move_by_Trolley_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Share_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Share_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Add Shopping Cart_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add Shopping Cart_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Receipt_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Receipt_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,8 +292,11 @@
   <data name="About Us Male_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\About Us Male_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add Shopping Cart_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add Shopping Cart_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avtar-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avtar-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Receipt_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Receipt_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,8 +328,14 @@
   <data name="Hand_Down_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hand_Down_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Shopping Cart_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shopping Cart_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avtar-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avtar-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avtar-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Down_3_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Down_3_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Right_3_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Right_3_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -337,28 +361,22 @@
   <data name="Barcode_Scanner_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Barcode_Scanner_2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avtar-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Books_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Books_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avtar-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Coins_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Coins_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avtar-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Graduation_Cap_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graduation_Cap_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avtar-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Handcuffs_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Handcuffs_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avtar-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Signature_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Signature_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="avtar-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avtar-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avtar-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avtar-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Singing_Teacher_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Singing_Teacher_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

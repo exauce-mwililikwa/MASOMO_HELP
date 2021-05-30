@@ -21,6 +21,7 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
             A.CHARGE_COMBO(NIVEAU, "" + CHARGEMENT_NIVEAU);
             A.CHARGE_COMBO(JOUR, "SELECT JOUR FROM PROGRAMME_JOURNE");
             A.CHARGE_COMBO(HEURE, "EXEC NOMBRE_HEURE 'MERCREDI'");
+            label12.Visible = false;
         }
 
         private void NIVEAU_SelectedIndexChanged(object sender, EventArgs e)
@@ -65,15 +66,19 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
             A.LABEL(PRENOM, " SELECT * FROM COURS_SALLE WHERE MATRICULE='" + dataGridView1.CurrentRow.Cells[3].Value.ToString() + "'", 6);
             A.LABEL(MATRICULE, " SELECT * FROM COURS_SALLE WHERE MATRICULE='" + dataGridView1.CurrentRow.Cells[3].Value.ToString() + "'", 3);
             A.LABEL(NOMBRE_HEURE, "SELECT * FROM COURS_SALLE WHERE DESIGNATION='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "' AND NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " AND ABREVIATION='" + ABREVIATION.SelectedItem.ToString() + "' AND LETTRE='" + DESIGNATION.SelectedItem.ToString() + "'", 10);
-            A.LABEL(DEJA_PROGRAMMER, "EXEC DEJA_PROGRAMMER_COURS '" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "',"+NIVEAU.SelectedItem.ToString()+",'"+ABREVIATION.SelectedItem.ToString()+"','"+DESIGNATION.SelectedItem.ToString()+"'", 0);
+          //  A.LABEL(DEJA_PROGRAMMER, "EXEC DEJA_PROGRAMMER_COURS '" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "',"+NIVEAU.SelectedItem.ToString()+",'"+ABREVIATION.SelectedItem.ToString()+"','"+DESIGNATION.SelectedItem.ToString()+"'", 0);
+            A.LABEL(DEJA_PROGRAMMER, "CHERCHE_NOMBRE_HEURE_DEJA_PROGRAMME '" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'," + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 0);
 
             if (int.Parse(NOMBRE_HEURE.Text) == int.Parse(DEJA_PROGRAMMER.Text))
             {
                 guna2Button1.Enabled = false;
+                label12.Visible = true;
             }
+
             else
             {
                 guna2Button1.Enabled = true;
+                label12.Visible = false;
             }
         }
 
@@ -89,7 +94,25 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
             dataGridView2.DataSource = A.TABLEAU(" SELECT HEURE,LUNDI,MARDI,MERCREDI,JEUDI,VENDREDI,SAMEDI FROM PROGRAMME_GENERAL WHERE NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " AND ABREVIATION='" + ABREVIATION.SelectedItem.ToString() + "' AND LETTRE='" + DESIGNATION.SelectedItem.ToString() + "'");
             A.LABEL(NOMBRE_HEURE, "SELECT * FROM COURS_SALLE WHERE DESIGNATION='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "' AND NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " AND ABREVIATION='" + ABREVIATION.SelectedItem.ToString() + "' AND LETTRE='" + DESIGNATION.SelectedItem.ToString() + "'", 10);
             A.LABEL(DEJA_PROGRAMMER, "EXEC DEJA_PROGRAMMER_COURS '" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'," + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 0);
-       
+            A.LABEL(NOM, " SELECT * FROM COURS_SALLE WHERE MATRICULE='" + dataGridView1.CurrentRow.Cells[3].Value.ToString() + "'", 4);
+            A.LABEL(POSTNOM, " SELECT * FROM COURS_SALLE WHERE MATRICULE='" + dataGridView1.CurrentRow.Cells[3].Value.ToString() + "'", 5);
+            A.LABEL(PRENOM, " SELECT * FROM COURS_SALLE WHERE MATRICULE='" + dataGridView1.CurrentRow.Cells[3].Value.ToString() + "'", 6);
+            A.LABEL(MATRICULE, " SELECT * FROM COURS_SALLE WHERE MATRICULE='" + dataGridView1.CurrentRow.Cells[3].Value.ToString() + "'", 3);
+            A.LABEL(NOMBRE_HEURE, "SELECT * FROM COURS_SALLE WHERE DESIGNATION='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "' AND NIVEAU_ETUDE=" + NIVEAU.SelectedItem.ToString() + " AND ABREVIATION='" + ABREVIATION.SelectedItem.ToString() + "' AND LETTRE='" + DESIGNATION.SelectedItem.ToString() + "'", 10);
+            //  A.LABEL(DEJA_PROGRAMMER, "EXEC DEJA_PROGRAMMER_COURS '" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "',"+NIVEAU.SelectedItem.ToString()+",'"+ABREVIATION.SelectedItem.ToString()+"','"+DESIGNATION.SelectedItem.ToString()+"'", 0);
+            A.LABEL(DEJA_PROGRAMMER, "CHERCHE_NOMBRE_HEURE_DEJA_PROGRAMME '" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'," + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 0);
+
+            if (int.Parse(NOMBRE_HEURE.Text) == int.Parse(DEJA_PROGRAMMER.Text))
+            {
+                guna2Button1.Enabled = false;
+                label12.Visible = true;
+            }
+
+            else
+            {
+                guna2Button1.Enabled = true;
+                label12.Visible = false;
+            }
         }
 
         private void HEURE_SelectedIndexChanged(object sender, EventArgs e)

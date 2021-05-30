@@ -77,6 +77,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.NOM = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -343,6 +344,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.OldLace;
+            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.DEJA_PROGRAMMER);
@@ -664,6 +666,16 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "NOM";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(365, 76);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(269, 13);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Le nombre de programme hebdomadaire est deja atteint";
+            // 
             // HORAIRE_HEBDOMADAIRE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -748,5 +760,6 @@
         private System.Windows.Forms.Label SALLE;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label12;
     }
 }

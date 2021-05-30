@@ -96,7 +96,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Controls.Add(this.guna2Button1);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
@@ -123,6 +123,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.guna2Button6);
             this.panel1.Controls.Add(this.guna2Button5);
@@ -145,7 +146,7 @@
             this.guna2Button2.Location = new System.Drawing.Point(-3, 22);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(175, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(37, 45);
             this.guna2Button2.TabIndex = 7;
             this.guna2Button2.Text = "INSCRIPTION";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -154,10 +155,11 @@
             // 
             this.guna2Button6.CheckedState.Parent = this.guna2Button6;
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.FillColor = System.Drawing.Color.White;
+            this.guna2Button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Handcuffs_64;
+            this.guna2Button6.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Handcuffs_32;
             this.guna2Button6.Location = new System.Drawing.Point(34, 173);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
@@ -170,10 +172,11 @@
             // 
             this.guna2Button5.CheckedState.Parent = this.guna2Button5;
             this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.FillColor = System.Drawing.Color.White;
+            this.guna2Button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Receipt_64;
+            this.guna2Button5.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Coins_32;
             this.guna2Button5.Location = new System.Drawing.Point(34, 223);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
@@ -186,14 +189,15 @@
             // 
             this.guna2Button4.CheckedState.Parent = this.guna2Button4;
             this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Add_User_Group_Man_Man_64;
-            this.guna2Button4.Location = new System.Drawing.Point(31, 73);
+            this.guna2Button4.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Graduation_Cap_32;
+            this.guna2Button4.Location = new System.Drawing.Point(31, 71);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(149, 45);
+            this.guna2Button4.Size = new System.Drawing.Size(149, 47);
             this.guna2Button4.TabIndex = 4;
             this.guna2Button4.Text = "INSCRIPTION";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -202,14 +206,15 @@
             // 
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.FillColor = System.Drawing.Color.White;
+            this.guna2Button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Verified_Account_64;
-            this.guna2Button3.Location = new System.Drawing.Point(34, 124);
+            this.guna2Button3.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Signature_32;
+            this.guna2Button3.Location = new System.Drawing.Point(21, 124);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(144, 45);
+            this.guna2Button3.Size = new System.Drawing.Size(157, 45);
             this.guna2Button3.TabIndex = 3;
             this.guna2Button3.Text = "CONFIRMATION";
             // 
@@ -282,6 +287,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.guna2Button7);
             this.panel2.Controls.Add(this.guna2Button8);
             this.panel2.Controls.Add(this.guna2Button9);
@@ -296,8 +302,9 @@
             // 
             this.guna2Button7.CheckedState.Parent = this.guna2Button7;
             this.guna2Button7.CustomImages.Parent = this.guna2Button7;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
+            this.guna2Button7.FillColor = System.Drawing.Color.White;
+            this.guna2Button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
             this.guna2Button7.Location = new System.Drawing.Point(34, 151);
             this.guna2Button7.Name = "guna2Button7";
@@ -325,9 +332,11 @@
             // 
             this.guna2Button9.CheckedState.Parent = this.guna2Button9;
             this.guna2Button9.CustomImages.Parent = this.guna2Button9;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button9.ForeColor = System.Drawing.Color.White;
+            this.guna2Button9.FillColor = System.Drawing.Color.White;
+            this.guna2Button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
             this.guna2Button9.HoverState.Parent = this.guna2Button9;
+            this.guna2Button9.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Singing_Teacher_32;
             this.guna2Button9.Location = new System.Drawing.Point(34, 54);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
@@ -340,8 +349,9 @@
             // 
             this.guna2Button10.CheckedState.Parent = this.guna2Button10;
             this.guna2Button10.CustomImages.Parent = this.guna2Button10;
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button10.ForeColor = System.Drawing.Color.White;
+            this.guna2Button10.FillColor = System.Drawing.Color.White;
+            this.guna2Button10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button10.ForeColor = System.Drawing.Color.Black;
             this.guna2Button10.HoverState.Parent = this.guna2Button10;
             this.guna2Button10.Location = new System.Drawing.Point(34, 102);
             this.guna2Button10.Name = "guna2Button10";
@@ -354,8 +364,9 @@
             // 
             this.guna2Button11.CheckedState.Parent = this.guna2Button11;
             this.guna2Button11.CustomImages.Parent = this.guna2Button11;
-            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button11.ForeColor = System.Drawing.Color.White;
+            this.guna2Button11.FillColor = System.Drawing.Color.White;
+            this.guna2Button11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button11.ForeColor = System.Drawing.Color.Black;
             this.guna2Button11.HoverState.Parent = this.guna2Button11;
             this.guna2Button11.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Singing_Teacher_64;
             this.guna2Button11.Location = new System.Drawing.Point(3, 3);
@@ -367,6 +378,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.guna2Button12);
             this.panel3.Controls.Add(this.guna2Button13);
             this.panel3.Controls.Add(this.guna2Button14);
@@ -382,8 +394,9 @@
             // 
             this.guna2Button12.CheckedState.Parent = this.guna2Button12;
             this.guna2Button12.CustomImages.Parent = this.guna2Button12;
-            this.guna2Button12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button12.ForeColor = System.Drawing.Color.White;
+            this.guna2Button12.FillColor = System.Drawing.Color.White;
+            this.guna2Button12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button12.ForeColor = System.Drawing.Color.Black;
             this.guna2Button12.HoverState.Parent = this.guna2Button12;
             this.guna2Button12.Location = new System.Drawing.Point(34, 157);
             this.guna2Button12.Name = "guna2Button12";
@@ -396,9 +409,11 @@
             // 
             this.guna2Button13.CheckedState.Parent = this.guna2Button13;
             this.guna2Button13.CustomImages.Parent = this.guna2Button13;
-            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.White;
+            this.guna2Button13.FillColor = System.Drawing.Color.White;
+            this.guna2Button13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button13.ForeColor = System.Drawing.Color.Black;
             this.guna2Button13.HoverState.Parent = this.guna2Button13;
+            this.guna2Button13.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button13.Image")));
             this.guna2Button13.Location = new System.Drawing.Point(34, 207);
             this.guna2Button13.Name = "guna2Button13";
             this.guna2Button13.ShadowDecoration.Parent = this.guna2Button13;
@@ -411,9 +426,11 @@
             // 
             this.guna2Button14.CheckedState.Parent = this.guna2Button14;
             this.guna2Button14.CustomImages.Parent = this.guna2Button14;
-            this.guna2Button14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button14.ForeColor = System.Drawing.Color.White;
+            this.guna2Button14.FillColor = System.Drawing.Color.White;
+            this.guna2Button14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button14.ForeColor = System.Drawing.Color.Black;
             this.guna2Button14.HoverState.Parent = this.guna2Button14;
+            this.guna2Button14.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button14.Image")));
             this.guna2Button14.Location = new System.Drawing.Point(34, 60);
             this.guna2Button14.Name = "guna2Button14";
             this.guna2Button14.ShadowDecoration.Parent = this.guna2Button14;
@@ -426,9 +443,11 @@
             // 
             this.guna2Button15.CheckedState.Parent = this.guna2Button15;
             this.guna2Button15.CustomImages.Parent = this.guna2Button15;
-            this.guna2Button15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button15.ForeColor = System.Drawing.Color.White;
+            this.guna2Button15.FillColor = System.Drawing.Color.White;
+            this.guna2Button15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button15.ForeColor = System.Drawing.Color.Black;
             this.guna2Button15.HoverState.Parent = this.guna2Button15;
+            this.guna2Button15.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button15.Image")));
             this.guna2Button15.Location = new System.Drawing.Point(34, 108);
             this.guna2Button15.Name = "guna2Button15";
             this.guna2Button15.ShadowDecoration.Parent = this.guna2Button15;
@@ -441,8 +460,9 @@
             // 
             this.guna2Button16.CheckedState.Parent = this.guna2Button16;
             this.guna2Button16.CustomImages.Parent = this.guna2Button16;
-            this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button16.ForeColor = System.Drawing.Color.White;
+            this.guna2Button16.FillColor = System.Drawing.Color.White;
+            this.guna2Button16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button16.ForeColor = System.Drawing.Color.Black;
             this.guna2Button16.HoverState.Parent = this.guna2Button16;
             this.guna2Button16.Image = global::ECOLE_SECONDAIRE.Properties.Resources.Maximum_Value_64;
             this.guna2Button16.Location = new System.Drawing.Point(5, 18);
@@ -454,7 +474,7 @@
             // 
             // menuStrip2
             // 
-            this.menuStrip2.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip2.BackColor = System.Drawing.Color.White;
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aJOUTEToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
@@ -588,6 +608,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1604, 881);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DASHBOARD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

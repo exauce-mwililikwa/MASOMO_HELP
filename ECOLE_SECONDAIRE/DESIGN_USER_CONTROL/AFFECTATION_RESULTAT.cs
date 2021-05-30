@@ -59,6 +59,7 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             A.EXEC_UNIVERSEL("AFFECTATION_BULLETION", "'"+COMBO_COURS.SelectedItem+"',"+NIVEAU.SelectedItem+",'"+ABREVIATION.SelectedItem+"','"+DESIGNATION.SelectedItem+"'", "COTATION");
+            richTextBox2.Text="'" + COMBO_COURS.SelectedItem + "'," + NIVEAU.SelectedItem + ",'" + ABREVIATION.SelectedItem + "','" + DESIGNATION.SelectedItem + "'";
         }
 
      

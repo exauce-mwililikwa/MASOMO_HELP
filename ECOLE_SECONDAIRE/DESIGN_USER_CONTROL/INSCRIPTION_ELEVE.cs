@@ -27,10 +27,15 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
 
         private void guna2ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            A.LABEL(NOMBRE_PLACE, "EXEC SITUATION_TITULARISATIO "+NIVEAU.SelectedItem.ToString()+",'"+ABREVIATION.SelectedItem.ToString()+"','"+DESIGNATION.SelectedItem.ToString()+"'", 1);
-            A.LABEL(TITULAIRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 0);
-            A.LABEL(PLACE_LIBRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 2);
-                
+            guna2Button4.Enabled = true;
+          
+           
+                A.LABEL(NOMBRE_PLACE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 1);
+                A.LABEL(TITULAIRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 0);
+                A.LABEL(PLACE_LIBRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 2);
+       
+            
+         
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -57,84 +62,95 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            A.LABEL(PLACE_LIBRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 2);
-            NOM.BorderColor = System.Drawing.Color.Black;
-            POSTNOM.BorderColor = System.Drawing.Color.Black;
-            PRENOM.BorderColor = System.Drawing.Color.Black;
-            PAYS.BorderColor = System.Drawing.Color.Black;
-            PROVINCE.BorderColor = System.Drawing.Color.Black;
-            VILLE.BorderColor = System.Drawing.Color.Black;
-            QUARTIER.BorderColor = System.Drawing.Color.Black;
-            NUMERO.BorderColor = System.Drawing.Color.Black;
-            CELLULAIRE.BorderColor = System.Drawing.Color.Black;
-            NOM_T.BorderColor = System.Drawing.Color.Black;
-            POSTNOM_T.BorderColor = System.Drawing.Color.Black;
-            PRENOM_T.BorderColor = System.Drawing.Color.Black;
-            CELLULAIRE_T.BorderColor = System.Drawing.Color.Black;
-            if (NOM.Text == "")
+            if (guna2Button4.Enabled == false)
             {
-                NOM.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (POSTNOM.Text == "")
-            {
-                POSTNOM.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (PRENOM.Text == "")
-            {
-                PRENOM.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (PAYS.Text == "")
-            {
-                PAYS.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (PROVINCE.Text == "")
-            {
-                PROVINCE.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (VILLE.Text == "")
-            {
-                VILLE.BorderColor = System.Drawing.Color.Red;
-            }
-           
-            else if (QUARTIER.Text == "")
-            {
-                QUARTIER.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (NUMERO.Text == "")
-            {
-                NUMERO.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (CELLULAIRE.Text == "")
-            {
-                CELLULAIRE.BorderColor = System.Drawing.Color.Red;
-            }
-           
-            else if (NOM_T.Text == "")
-            {
-                NOM_T.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (POSTNOM_T.Text == "")
-            {
-                POSTNOM_T.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (PRENOM_T.Text == "")
-            {
-                PRENOM_T.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (CELLULAIRE_T.Text == "")
-            {
-                CELLULAIRE_T.BorderColor = System.Drawing.Color.Red;
-            }
-            else if (int.Parse(PLACE_LIBRE.Text) <= 0)
-            {
-                MessageBox.Show("Place insufissant", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.None);
+                MessageBox.Show("Selectionner la salle a affecter");
             }
             else
             {
-                B.ELEVE(NOM,POSTNOM,PRENOM,PAYS,PROVINCE,VILLE,QUARTIER,AVENU,NUMERO,EMAIL,CELLULAIRE,NOM_T,POSTNOM_T,PRENOM_T,EMAIL_T,CELLULAIRE_T,NIVEAU,ABREVIATION,DESIGNATION);
+
+
+                A.LABEL(PLACE_LIBRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 2);
+                NOM.BorderColor = System.Drawing.Color.Black;
+                POSTNOM.BorderColor = System.Drawing.Color.Black;
+                PRENOM.BorderColor = System.Drawing.Color.Black;
+                PAYS.BorderColor = System.Drawing.Color.Black;
+                PROVINCE.BorderColor = System.Drawing.Color.Black;
+                VILLE.BorderColor = System.Drawing.Color.Black;
+                QUARTIER.BorderColor = System.Drawing.Color.Black;
+                NUMERO.BorderColor = System.Drawing.Color.Black;
+                CELLULAIRE.BorderColor = System.Drawing.Color.Black;
+                NOM_T.BorderColor = System.Drawing.Color.Black;
+                POSTNOM_T.BorderColor = System.Drawing.Color.Black;
+                PRENOM_T.BorderColor = System.Drawing.Color.Black;
+                CELLULAIRE_T.BorderColor = System.Drawing.Color.Black;
+                if (NOM.Text == "")
+                {
+                    NOM.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (POSTNOM.Text == "")
+                {
+                    POSTNOM.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (PRENOM.Text == "")
+                {
+                    PRENOM.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (PAYS.Text == "")
+                {
+                    PAYS.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (PROVINCE.Text == "")
+                {
+                    PROVINCE.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (VILLE.Text == "")
+                {
+                    VILLE.BorderColor = System.Drawing.Color.Red;
+                }
+
+                else if (QUARTIER.Text == "")
+                {
+                    QUARTIER.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (NUMERO.Text == "")
+                {
+                    NUMERO.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (CELLULAIRE.Text == "")
+                {
+                    CELLULAIRE.BorderColor = System.Drawing.Color.Red;
+                }
+
+                else if (NOM_T.Text == "")
+                {
+                    NOM_T.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (POSTNOM_T.Text == "")
+                {
+                    POSTNOM_T.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (PRENOM_T.Text == "")
+                {
+                    PRENOM_T.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (CELLULAIRE_T.Text == "")
+                {
+                    CELLULAIRE_T.BorderColor = System.Drawing.Color.Red;
+                }
+                else if (int.Parse(PLACE_LIBRE.Text) <= 0)
+                {
+                    MessageBox.Show("Place insufissant", "ERREUR", MessageBoxButtons.OK, MessageBoxIcon.None);
+                }
+                else
+                {
+                    B.ELEVE(NOM, POSTNOM, PRENOM, PAYS, PROVINCE, VILLE, QUARTIER, AVENU, NUMERO, EMAIL, CELLULAIRE, NOM_T, POSTNOM_T, PRENOM_T, EMAIL_T, CELLULAIRE_T, NIVEAU, ABREVIATION, DESIGNATION);
+               
+                }
+                A.LABEL(PLACE_LIBRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 2);
+                dataGridView1.DataSource = A.TABLEAU("SELECT MATRICULE,NOM,POSTNOM,PRENOM,CLASSE,HEURE FROM LISTE_INSCRIT_JOURNALIER WHERE DATE=FORMAT(GETDATE(),'yyyy-MM-dd')");
+           
             }
-            A.LABEL(PLACE_LIBRE, "EXEC SITUATION_TITULARISATIO " + NIVEAU.SelectedItem.ToString() + ",'" + ABREVIATION.SelectedItem.ToString() + "','" + DESIGNATION.SelectedItem.ToString() + "'", 2);
-            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -204,5 +220,11 @@ namespace ECOLE_SECONDAIRE.DESIGN_USER_CONTROL
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = A.TABLEAU("SELECT MATRICULE,NOM,POSTNOM,PRENOM,CLASSE,HEURE FROM LISTE_INSCRIT_JOURNALIER WHERE CONCAT (NOM,' ',POSTNOM,' ',PRENOM) LIKE '%"+textBox1.Text+"%' AND DATE=FORMAT(GETDATE(),'yyyy-MM-dd')");
+         
+        }//
     }
 }

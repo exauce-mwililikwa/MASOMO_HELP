@@ -9,7 +9,7 @@ namespace ECOLE_SECONDAIRE.CLASS_DATA_BASE
 {
     class MYCONNECTION
     {
-        public static SqlConnection con = new SqlConnection("server='DESKTOP-N05KP32\\SA';database=ECOLE_PRIMAIRE;uid=SA;pwd=aliconnorecho");
+        public static SqlConnection con = new SqlConnection("Data Source=DESKTOP-0FJ1LUK\\SA;Initial Catalog=ECOLE_PRIMAIRE;User ID=sa;Password=aliconnorecho");
 
     }
 }

@@ -283,9 +283,29 @@ namespace ECOLE_SECONDAIRE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Books_64 {
+            get {
+                object obj = ResourceManager.GetObject("Books_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cancel_48px {
             get {
                 object obj = ResourceManager.GetObject("Cancel_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Coins_32 {
+            get {
+                object obj = ResourceManager.GetObject("Coins_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +413,29 @@ namespace ECOLE_SECONDAIRE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Graduation_Cap_32 {
+            get {
+                object obj = ResourceManager.GetObject("Graduation_Cap_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hand_Down_64 {
             get {
                 object obj = ResourceManager.GetObject("Hand_Down_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Handcuffs_32 {
+            get {
+                object obj = ResourceManager.GetObject("Handcuffs_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -776,6 +816,26 @@ namespace ECOLE_SECONDAIRE.Properties {
         internal static System.Drawing.Bitmap Shopping_Cart_Loaded_48px {
             get {
                 object obj = ResourceManager.GetObject("Shopping Cart Loaded_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Signature_32 {
+            get {
+                object obj = ResourceManager.GetObject("Signature_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Singing_Teacher_32 {
+            get {
+                object obj = ResourceManager.GetObject("Singing_Teacher_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -15,8 +15,8 @@ namespace ECOLE_SECONDAIRE.DESIGN_BOXES
         public AJOUT_NIVEAU()
         {
             InitializeComponent();
-            B.LABEL(SUPERIEUR, "SELECT MAX(NIVEAU) FROM NIVEAU_ETUDE",0);
-            B.LABEL(INFERIEUR, "SELECT MIN(NIVEAU) FROM NIVEAU_ETUDE",0);
+            B.LABEL(SUPERIEUR, "SELECT ISNULL(MAX(NIVEAU),0) FROM NIVEAU_ETUDE",0);
+            B.LABEL(INFERIEUR, "SELECT ISNULL(MIN(NIVEAU),0) FROM NIVEAU_ETUDE", 0);
             guna2NumericUpDown1.Minimum = int.Parse(SUPERIEUR.Text) + 1;
         }
 
