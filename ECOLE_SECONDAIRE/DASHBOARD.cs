@@ -17,6 +17,8 @@ namespace ECOLE_SECONDAIRE
         {
            InitializeComponent();
             c = panel4;
+            this.tableLayoutPanel2.Cursor = System.Windows.Forms.Cursors.Default;
+           
         }
         
         
@@ -177,6 +179,11 @@ namespace ECOLE_SECONDAIRE
         private void hORAIRESEMESTRIELToolStripMenuItem_Click(object sender, EventArgs e)
         {
             a.APPEL_PANEL(new DESIGN_USER_CONTROL.HORAIRE_HEBDOMADAIRE(), panel4);
+        }
+
+        private void guna2GradientPanel2_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

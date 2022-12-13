@@ -85,6 +85,7 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 0, 0);
+         //   this.tableLayoutPanel2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 52);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -92,6 +93,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.431345F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(191, 826);
             this.tableLayoutPanel2.TabIndex = 4;
+       //     this.tableLayoutPanel2.UseWaitCursor = true;
             // 
             // flowLayoutPanel1
             // 
@@ -105,6 +107,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(185, 820);
             this.flowLayoutPanel1.TabIndex = 0;
+          //  this.flowLayoutPanel1.UseWaitCursor = true;
             // 
             // guna2Button1
             // 
@@ -120,6 +123,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "DASHBOARD";
+      //      this.guna2Button1.UseWaitCursor = true;
             // 
             // panel1
             // 
@@ -130,10 +134,12 @@
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.guna2Button3);
             this.panel1.Controls.Add(this.menuStrip1);
+           // this.panel1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel1.Location = new System.Drawing.Point(3, 54);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(181, 275);
             this.panel1.TabIndex = 1;
+          //  this.panel1.UseWaitCursor = true;
             // 
             // guna2Button2
             // 
@@ -146,9 +152,10 @@
             this.guna2Button2.Location = new System.Drawing.Point(-3, 22);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(37, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(102, 45);
             this.guna2Button2.TabIndex = 7;
             this.guna2Button2.Text = "INSCRIPTION";
+          //  this.guna2Button2.UseWaitCursor = true;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button6
@@ -166,6 +173,7 @@
             this.guna2Button6.Size = new System.Drawing.Size(144, 45);
             this.guna2Button6.TabIndex = 6;
             this.guna2Button6.Text = "DISCIPLINE";
+           // this.guna2Button6.UseWaitCursor = true;
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Button5
@@ -183,6 +191,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(144, 45);
             this.guna2Button5.TabIndex = 5;
             this.guna2Button5.Text = "PAIEMENT";
+         //   this.guna2Button5.UseWaitCursor = true;
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
@@ -200,6 +209,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(149, 47);
             this.guna2Button4.TabIndex = 4;
             this.guna2Button4.Text = "INSCRIPTION";
+         //   this.guna2Button4.UseWaitCursor = true;
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
@@ -217,6 +227,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(157, 45);
             this.guna2Button3.TabIndex = 3;
             this.guna2Button3.Text = "CONFIRMATION";
+        //    this.guna2Button3.UseWaitCursor = true;
             // 
             // menuStrip1
             // 
@@ -229,6 +240,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(181, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
+           // this.menuStrip1.UseWaitCursor = true;
             // 
             // aJOUTERToolStripMenuItem
             // 
@@ -297,6 +309,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(181, 193);
             this.panel2.TabIndex = 7;
+        //    this.panel2.UseWaitCursor = true;
             // 
             // guna2Button7
             // 
@@ -312,6 +325,7 @@
             this.guna2Button7.Size = new System.Drawing.Size(144, 45);
             this.guna2Button7.TabIndex = 6;
             this.guna2Button7.Text = "DISCIPLINE";
+        //    this.guna2Button7.UseWaitCursor = true;
             this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // guna2Button8
@@ -327,6 +341,7 @@
             this.guna2Button8.Size = new System.Drawing.Size(144, 45);
             this.guna2Button8.TabIndex = 5;
             this.guna2Button8.Text = "PAIEMENT";
+        //    this.guna2Button8.UseWaitCursor = true;
             // 
             // guna2Button9
             // 
@@ -343,6 +358,7 @@
             this.guna2Button9.Size = new System.Drawing.Size(149, 45);
             this.guna2Button9.TabIndex = 4;
             this.guna2Button9.Text = "ENREGISTREMENT";
+      //      this.guna2Button9.UseWaitCursor = true;
             this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
             // 
             // guna2Button10
@@ -359,6 +375,7 @@
             this.guna2Button10.Size = new System.Drawing.Size(144, 45);
             this.guna2Button10.TabIndex = 3;
             this.guna2Button10.Text = "TITULARISATION";
+        //    this.guna2Button10.UseWaitCursor = true;
             // 
             // guna2Button11
             // 
@@ -375,6 +392,7 @@
             this.guna2Button11.Size = new System.Drawing.Size(180, 45);
             this.guna2Button11.TabIndex = 2;
             this.guna2Button11.Text = "PROFESSEUR";
+        //    this.guna2Button11.UseWaitCursor = true;
             // 
             // panel3
             // 
@@ -389,6 +407,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(181, 257);
             this.panel3.TabIndex = 8;
+           // this.panel3.UseWaitCursor = true;
             // 
             // guna2Button12
             // 
@@ -404,6 +423,7 @@
             this.guna2Button12.Size = new System.Drawing.Size(144, 45);
             this.guna2Button12.TabIndex = 6;
             this.guna2Button12.Text = "DISCIPLINE";
+         //   this.guna2Button12.UseWaitCursor = true;
             // 
             // guna2Button13
             // 
@@ -420,6 +440,7 @@
             this.guna2Button13.Size = new System.Drawing.Size(144, 45);
             this.guna2Button13.TabIndex = 5;
             this.guna2Button13.Text = "BULLETIN";
+       //     this.guna2Button13.UseWaitCursor = true;
             this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
             // 
             // guna2Button14
@@ -437,6 +458,7 @@
             this.guna2Button14.Size = new System.Drawing.Size(149, 45);
             this.guna2Button14.TabIndex = 4;
             this.guna2Button14.Text = "TRAVAIL";
+      //      this.guna2Button14.UseWaitCursor = true;
             this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
             // 
             // guna2Button15
@@ -454,6 +476,7 @@
             this.guna2Button15.Size = new System.Drawing.Size(144, 45);
             this.guna2Button15.TabIndex = 3;
             this.guna2Button15.Text = "AFFECTATION";
+           // this.guna2Button15.UseWaitCursor = true;
             this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
             // 
             // guna2Button16
@@ -471,6 +494,7 @@
             this.guna2Button16.Size = new System.Drawing.Size(180, 39);
             this.guna2Button16.TabIndex = 2;
             this.guna2Button16.Text = "COTATION";
+        //    this.guna2Button16.UseWaitCursor = true;
             // 
             // menuStrip2
             // 
@@ -482,6 +506,7 @@
             this.menuStrip2.Size = new System.Drawing.Size(181, 24);
             this.menuStrip2.TabIndex = 7;
             this.menuStrip2.Text = "menuStrip2";
+        //    this.menuStrip2.UseWaitCursor = true;
             // 
             // aJOUTEToolStripMenuItem
             // 
@@ -526,6 +551,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1604, 881);
             this.tableLayoutPanel1.TabIndex = 0;
+           // this.tableLayoutPanel1.UseWaitCursor = true;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_1);
             // 
             // guna2GradientPanel2
@@ -544,6 +570,8 @@
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
             this.guna2GradientPanel2.Size = new System.Drawing.Size(1598, 43);
             this.guna2GradientPanel2.TabIndex = 1;
+          //  this.guna2GradientPanel2.UseWaitCursor = true;
+            this.guna2GradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel2_Paint_1);
             // 
             // guna2CirclePictureBox1
             // 
@@ -556,6 +584,7 @@
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 18;
             this.guna2CirclePictureBox1.TabStop = false;
+           // this.guna2CirclePictureBox1.UseWaitCursor = true;
             // 
             // label17
             // 
@@ -568,6 +597,7 @@
             this.label17.Size = new System.Drawing.Size(226, 23);
             this.label17.TabIndex = 17;
             this.label17.Text = "Mr EXAUCE MWILILIKWA";
+       //     this.label17.UseWaitCursor = true;
             // 
             // label16
             // 
@@ -580,6 +610,7 @@
             this.label16.Size = new System.Drawing.Size(94, 23);
             this.label16.TabIndex = 16;
             this.label16.Text = "Bienvenu";
+       //     this.label16.UseWaitCursor = true;
             // 
             // label15
             // 
@@ -592,15 +623,16 @@
             this.label15.Size = new System.Drawing.Size(140, 23);
             this.label15.TabIndex = 15;
             this.label15.Text = "HAYI masomo";
+          //  this.label15.UseWaitCursor = true;
             // 
             // panel4
             // 
+            this.panel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(200, 52);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1401, 826);
             this.panel4.TabIndex = 5;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // DASHBOARD
             // 
@@ -659,7 +691,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel4;
     //    private DevExpress.XtraBars.PopupMenu popupMenu1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -673,6 +704,7 @@
         private System.Windows.Forms.ToolStripMenuItem sALLEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cOURSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hORAIRESEMESTRIELToolStripMenuItem;
+        private System.Windows.Forms.Panel panel4;
 
 
 

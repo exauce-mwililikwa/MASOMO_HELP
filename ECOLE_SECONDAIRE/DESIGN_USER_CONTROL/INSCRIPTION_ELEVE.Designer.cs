@@ -1090,7 +1090,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(19, 166);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(520, 637);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(529, 637);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // panelusuario
@@ -1103,7 +1103,7 @@
             this.panelusuario.MaximumSize = new System.Drawing.Size(517, 407);
             this.panelusuario.MinimumSize = new System.Drawing.Size(517, 2);
             this.panelusuario.Name = "panelusuario";
-            this.panelusuario.Size = new System.Drawing.Size(517, 12);
+            this.panelusuario.Size = new System.Drawing.Size(517, 370);
             this.panelusuario.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -1319,9 +1319,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Location = new System.Drawing.Point(3, 248);
+            this.panel3.Location = new System.Drawing.Point(3, 606);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(517, 561);
+            this.panel3.Size = new System.Drawing.Size(176, 561);
             this.panel3.TabIndex = 3;
             // 
             // colapsarusurio
